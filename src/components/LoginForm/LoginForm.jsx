@@ -11,11 +11,10 @@ export default function LoginForm() {
     dispatch(logIn(values))
       .unwrap()
       .then((reponse) => {
-        console.log(reponse);
-        toast.success("Success!!!");
+        toast.success(`Success!!! Welcome ${reponse.user.name}`);
       })
       .catch((error) => {
-        console.log(error);
+        toast.error(`Error "${error}", please check your login and password`);
       });
 
     actions.resetForm();

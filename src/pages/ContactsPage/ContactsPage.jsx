@@ -24,7 +24,6 @@ export default function TasksPage() {
   return (
     <>
       <PageTitle>Your Contacts</PageTitle>
-      <h1>Phonebook</h1>
       <ContactForm />
       <SearchBox />
       {loading && <Loader>Loading contacts, please wait</Loader>}

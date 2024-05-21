@@ -11,9 +11,6 @@ const clearAuthHeader = () => {
   axios.defaults.headers.common["Authorization"] = "";
 };
 
-// react1001@mail.com
-// react100@mail.com
-
 export const register = createAsyncThunk(
   "auth/register",
   async (userInfo, thunkAPI) => {
